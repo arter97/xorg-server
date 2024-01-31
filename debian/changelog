@@ -1,3 +1,9 @@
+xorg-server (2:21.1.99-5arter97) noble; urgency=medium
+
+  * 21.1.11 + modesettings backports
+
+ -- Juhyung Park <qkrwngud825@gmail.com>  Thu, 01 Feb 2024 01:31:00 +0900
+
 xorg-server (2:21.1.11-2ubuntu1) noble; urgency=medium
 
   * Merge from Debian.
