@@ -1386,6 +1386,9 @@ PreInit(ScrnInfoPtr pScrn, int flags)
     ms->drmmode.pageflip =
         xf86ReturnOptValBool(ms->drmmode.Options, OPTION_PAGEFLIP, TRUE);
 
+    xf86DrvMsg(pScrn->scrnIndex, X_INFO, "PageFlip: %sabled\n",
+               ms->drmmode.pageflip ? "en" : "dis");
+
     pScrn->capabilities = 0;
     ret = drmGetCap(ms->fd, DRM_CAP_PRIME, &value);
     if (ret == 0) {
